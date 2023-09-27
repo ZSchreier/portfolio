@@ -61,7 +61,7 @@ header ul li a:active {
   height: 100px;
   width: 100%;
   margin-bottom: 10px;
-  background-image: url("./water-backgorund.jpg");
+  background-image: url("./water-background.jpg");
   background-size: cover;
   background-position: center;  
 }
@@ -131,6 +131,9 @@ header ul li a:active {
   align-items: center;
   font-size: 20px;
   color: gray;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
 }
 
 .main-work p {
@@ -139,6 +142,55 @@ header ul li a:active {
   align-items: center;
   font-size: 15px;
   color: white;
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+}
+
+/* side-work1 uses an image by Cullen Smith on Unsplash.com */
+/* side-work2 uses an image by Zugr on Unsplash.com */
+.side-work1,
+.side-work2 {
+  width: 200px;
+  height: 200px; 
+  border: 1px solid black;
+  background-image: url("./fire-backdrop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.side-work2 {
+  background-image: url("./grass-backdrop.jpg");
+}
+
+.side-work1 h4,
+.side-work2 h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: gray;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.side-work1 p,
+.side-work2 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
   margin-top: 5px;
 }
 
@@ -189,7 +241,7 @@ footer ul li a:active {
   text-shadow: 0 0 15px var(--hoverlink);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   header h1,
   header nav,
   header ul li {
@@ -200,18 +252,24 @@ footer ul li a:active {
   .about-me,
   .work {
     display: block;
-    margin-left: 10%;
     margin-right: 10%;
+    margin-left: 10%;
   }
 
   .work a,
-  .main-work {
+  .main-work,
+  .side-work1,
+  .side-work2,
+  .side-work1 a,
+  .side-work2 a {
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
     align-items: center;
     margin-right: 50%;
     margin-left: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .about-me h2, 
@@ -219,21 +277,6 @@ footer ul li a:active {
     margin-bottom: 15px;
   }
 }
-
-/* @media screen and (max-width: 992px) {
-  .about-me,
-  .work {
-    display: block;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .about-me h2, 
-  .work h2 {
-    margin-bottom: 10px;
-  }
-} */
-
 
 
 
